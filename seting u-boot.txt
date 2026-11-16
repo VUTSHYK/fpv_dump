@@ -1,0 +1,19 @@
+arch=arm
+baudrate=115200
+board=hi3559v200
+board_name=hi3559v200
+bootargs=mem=96M quiet console=ttyAMA0,115200 clk_ignore_unused rw root=/dev/mtdblock6 rootfstype=jffs2 mtdparts=hi_sfc:384K(u-boot.bin),64K(rawparam),64K(rawparambak),2944K(media_app_zip.bin),768K(resImage_zip),2560K(uImage),1728K(rootfs.jffs2),6400K(appfs.jffs2)
+bootcmd=sf probe 0;sf read 0x84000000 0x360000 0xc0000;ugzip 0x84000000 0x81f00000;sf read 0x84000000 0x60000 0x10000;sf read 0x84100000 0x70000 0x10000;cread 0x84000000 0x84100000 0x10000 0x80100000;go_cpu1 0x80200000 0x89000000 0x80000 0x2e0000;sf read 0x84000000 0x420000 0x280000;bootm 0x84000000
+bootdelay=2
+cpu=armv7
+ethact=eth0
+fileaddr=83000000
+filesize=256dfd
+soc=hi3559v200
+stderr=serial
+stdin=serial
+stdout=serial
+swver=GR01V2_0122011015
+swverv2=GR01V2_S2_0625160133
+vendor=hisilicon
+verify=n

@@ -1,0 +1,185 @@
+
+
+
+System startup
+
+Uncompress Ok!
+
+U-Boot 2016.11 (Aug 31 2021 - 11:18:56 +0800)hi3559v200
+
+Relocation Offset is: 1f707000
+Relocating to 9ff07000, new gd at 9fec6ef0, sp at 9fec6ed0
+SPI Nor:  MMC:
+EMMC/MMC/SD controller initialization.
+Card did not respond to voltage select!
+mmc_init failed! err:-95
+No SD device found !
+Card did not respond to voltage select!
+** Bad device mmc 0 **
+himci: 0
+In:    serial
+Out:   serial
+Err:   serial
+Net:   eth0
+Warning: eth0 (eth0) using random MAC address - e2:36:31:54:12:34
+
+device 0 offset 0xff0000, size 0x10000
+
+SF: 65536 bytes @ 0xff0000 Read: OK
+sdcard not exist
+Hit any key to stop autoboot:  0
+device 0 offset 0x360000, size 0xc0000
+
+SF: 786432 bytes @ 0x360000 Read: OK
+decompress ok!
+device 0 offset 0x60000, size 0x10000
+
+SF: 65536 bytes @ 0x60000 Read: OK
+device 0 offset 0x70000, size 0x10000
+
+SF: 65536 bytes @ 0x70000 Read: OK
+DBG: <Cycle_Get_InitData:107> Compress[1]
+DBG: <Cycle_Get_Data:196> decompress ok!
+decompress ok!
+## Starting cpu1 A7 at 0x80200000 ...
+device 0 offset 0x420000, size 0x280000
+
+SF: 2621440 bytes @ 0x420000 Read: OK
+## Booting kernel from Legacy Image at 84000000 ...
+   Image Name:   Linux-4.9.37
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    2345163 Bytes = 2.2 MiB
+   Load Address: 82008000
+   Entry Point:  82008000
+   Loading Kernel Image ... OK
+
+Starting kernel ...
+
+hisi-sfc hisi_spi_nor.0: The ID: 0x20 isn't in the BP table, Current device can't not protect
+mknod: /dev/console: File exists
+mknod: /dev/ttyAMA0: File exists
+mknod: /dev/ttyAMA1: File exists
+mknod: /dev/ttyS000: File exists
+mknod: /dev/null: File exists
+*** Board tools : ver0.0.1_20121120 ***
+[debug]: {source/utils/cmdshell.c:168}cmdstr:himm
+0x114F0058: 0x000004F4 --> 0x00000403
+[END]
+*** Board tools : ver0.0.1_20121120 ***
+[debug]: {source/utils/cmdshell.c:168}cmdstr:himm
+0x114F005c: 0x000004F4 --> 0x00000403
+[END]
+*** Board tools : ver0.0.1_20121120 ***
+[debug]: {source/utils/cmdshell.c:168}cmdstr:himm
+0x112f0048: 0x000004F2 --> 0x00000400
+[END]
+./bootapp: line 14: udevd: not found
+./bootapp: line 15: udevadm: not found
+read file ok
+date -s '2024-06-18 06:13:23'
+Tue Jun 18 06:13:23 UTC 2024
+current chahnel = 48 , ssid = HolyStoneEIS-32fe0fD
+ret = 17
+mac = 32fe0f
+tmpname = HolyStoneEIS-32fe0f
+Name: HolyStoneEIS-32fe0fD
+brightness = 65
+config file save ok
+sdcard_resolution = 4
+
+----4K@25fps H.264 record + 1080p@30fps H.265 record + 1080p HDMI preview----
+
+[VCAP] [HI_MAPI_VCAP_SetAttr][ 493][Info]:MSG_CMD_VCAP_SET_ATTR fail
+[VCAP] [HI_MAPI_VCAP_SetAttr][ 493][Info]:fail and return:[0xa3018009]
+
+Failed at SAMPLE_VCAP_CreateSingle: LINE: 77  (ret:0x0xa3018009!)
+
+Failed at SAMPLE_VENC_TwoRecord: LINE: 1117  (ret:0x0xa3018009!)
+[VENC] [HI_MAPI_VENC_Stop][ 683][Info]:VENC has not been inited
+[VENC] [HI_MAPI_VENC_UnBindVProc][ 804][Info]:VENC has not been inited
+[VENC] [HI_MAPI_VENC_UnRegisterCallback][ 632][Info]:VENC has not been inited
+[VENC] [HI_MAPI_VENC_Stop][ 683][Info]:VENC has not been inited
+[VENC] [HI_MAPI_VENC_UnBindVProc][ 804][Info]:VENC has not been inited
+[VENC] [HI_MAPI_VENC_UnRegisterCallback][ 632][Info]:VENC has not been inited
+[VENC] [HI_MAPI_VENC_Stop][ 683][Info]:VENC has not been inited
+[VENC] [HI_MAPI_VENC_UnBindVProc][ 804][Info]:VENC has not been inited
+[VENC] [HI_MAPI_VENC_UnRegisterCallback][ 632][Info]:VENC has not been inited
+[DISP] [HI_MAPI_DISP_UnBind_VProc][ 464][Info]:MSG_CMD_DISP_UNBIND_VPROC fail s32Ret:a0028003
+[HDMI] [HI_MAPI_HDMI_Stop][ 169][Info]:MSG_CMD_HDMI_STOP fail s32Ret:a3088010
+[HDMI] [HI_MAPI_HDMI_Deinit][  78][Info]:MSG_CMD_HDMI_DEINIT fail s32Ret:a3088010
+sample_venc error reset a3018009!!!!!!
+sdcard_resolution = 4
+
+----4K@25fps H.264 record + 1080p@30fps H.265 record + 1080p HDMI preview----
+
+1 :
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 2 2 2 2 2 2 2 1 1 1 1 1
+1 1 1 1 1 2 2 2 2 2 2 2 1 1 1 1 1
+1 1 1 1 2 2 2 2 2 2 2 2 2 1 1 1 1
+1 1 1 1 2 2 2 2 2 2 2 2 2 1 1 1 1
+1 1 1 1 2 2 2 2 2 2 2 2 2 1 1 1 1
+1 1 1 1 1 2 2 2 2 2 2 2 1 1 1 1 1
+1 1 1 1 1 2 2 2 2 2 2 2 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+2 :
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+u32Max =                1048320
+u32Min =                1024
+u32AGain                = 1024
+u32DGain                = 1024
+u32ISPDGain     = 1092
+u32ExpTime              = 15138
+u32Max =                52416
+u32Min =                1024
+r_luma_thr = 1500 1500 0
+g_luma_thr = 1500 1500 0
+b_luma_thr = 4095 1500 0
+1r_luma_thr = 1500 1500 0
+1g_luma_thr = 1500 1500 0
+1b_luma_thr = 4095 1500 0
+1LumaDetThr = 3200 1500 0
+1CbCrRatio = -50 -50 -50
+ratio = 80 frame = 30
+SAMPLE: 2
+Press Enter key to stop record...
+logic pthread start...
+[DEBUG] <log_init_serial : 115> uart open ok
+[DEBUG] <log_set_uart : 108> set done!
+{HolyStoneEIS-32fe0fD}
+1err = 0,nsendbuf = 16384
+1err = 0
+2err = 0,nsendbuf = 327680
+Configuration file: hostapd.conf
+wlan0: interface state UNINITIALIZED->COUNTRY_UPDATE
+Using interface wlan0 with hwaddr 38:e2:6e:32:fe:0f and ssid "HolyStoneEIS-32fe0fD"
+wlan0: interface state COUNTRY_UPDATE->ENABLED
+wlan0: AP-ENABLED
+Configuration file: hostapd.conf
+wlan0: interface state UNINITIALIZED->COUNTRY_UPDATE
+Using interface wlan0 with hwaddr 38:e2:6e:32:fe:0f and ssid "HolyStoneEIS-32fe0fD"
+wlan0: interface state COUNTRY_UPDATE->ENABLED
+wlan0: AP-ENABLED
+(none) login:
